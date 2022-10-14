@@ -25,9 +25,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    //Actor array
+    var array = [[]]
+    //Flower array
     
+    //Book array
     
-
-
 }
 
