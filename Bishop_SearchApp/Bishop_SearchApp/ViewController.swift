@@ -25,11 +25,21 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    //Actor array
-    var array = [[UIImage(named: "")],[],[]]
-    //Flower array
+    var array = [
+        //Flower image array
+        [UIImage(named: "daisy"), UIImage(named: "lilly"), UIImage(named: "marigold"), UIImage(named: "rose"), UIImage(named: "sunflower")],
+        //Book image array
+        [UIImage(named: "dune"), UIImage(named: "great_gatsby"), UIImage(named: "little_women"), UIImage(named: "pride_and_prejudice"), UIImage(named: "wuthering_heights")],
+        //Actor image array
+        [UIImage(named: "emma_watson"), UIImage(named: "meryl_streep"), UIImage(named: "morgan_freeman"), UIImage(named: "tom_hanks"), UIImage(named: "tom_holland")]
+    ]
+    //Flower keyword array
+    var flower_keywords = ["flower", "color", "size", "petals"]
     
-    //Book array
+    //Book keyword array
+    var book_keywords = ["book", "classic", "literature", "hardcover"]
     
+    //Actor keyword array
+    var actor_keywords = ["actor", "movie", "hero", "film"]
 }
 
