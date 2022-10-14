@@ -16,6 +16,7 @@
 		53414C5128F675E80091D298 /* Bishop_SearchAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53414C5028F675E80091D298 /* Bishop_SearchAppTests.swift */; };
 		53414C5B28F675E80091D298 /* Bishop_SearchAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53414C5A28F675E80091D298 /* Bishop_SearchAppUITests.swift */; };
 		53414C5D28F675E80091D298 /* Bishop_SearchAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53414C5C28F675E80091D298 /* Bishop_SearchAppUITestsLaunchTests.swift */; };
+		53414C6A28FA0B8D0091D298 /* Sample Images in Resources */ = {isa = PBXBuildFile; fileRef = 53414C6928FA0B8D0091D298 /* Sample Images */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		53414C5628F675E80091D298 /* Bishop_SearchAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Bishop_SearchAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		53414C5A28F675E80091D298 /* Bishop_SearchAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bishop_SearchAppUITests.swift; sourceTree = "<group>"; };
 		53414C5C28F675E80091D298 /* Bishop_SearchAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bishop_SearchAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		53414C6928FA0B8D0091D298 /* Sample Images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Sample Images"; path = "../../../../Sample Images"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				53414C3D28F675E70091D298 /* ViewController.swift */,
 				53414C3F28F675E70091D298 /* Main.storyboard */,
 				53414C4228F675E80091D298 /* Assets.xcassets */,
+				53414C6928FA0B8D0091D298 /* Sample Images */,
 				53414C4428F675E80091D298 /* LaunchScreen.storyboard */,
 				53414C4728F675E80091D298 /* Info.plist */,
 			);
@@ -232,6 +235,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53414C4628F675E80091D298 /* LaunchScreen.storyboard in Resources */,
+				53414C6A28FA0B8D0091D298 /* Sample Images in Resources */,
 				53414C4328F675E80091D298 /* Assets.xcassets in Resources */,
 				53414C4128F675E70091D298 /* Main.storyboard in Resources */,
 			);
