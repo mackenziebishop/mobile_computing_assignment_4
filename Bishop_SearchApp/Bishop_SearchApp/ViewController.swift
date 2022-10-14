@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     //Actor array
-    var array = [[]]
+    var array = [[UIImage(named: "")],[],[]]
     //Flower array
     
     //Book array
