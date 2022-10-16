@@ -41,16 +41,16 @@ class ViewController: UIViewController {
         [UIImage(named: "emma_watson"), UIImage(named: "meryl_streep"), UIImage(named: "morgan_freeman"), UIImage(named: "tom_hanks"), UIImage(named: "tom_holland")]
     ]
     //Flower keyword array
-    var flower_keywords = ["flower", "color", "size", "petals"]
+    let flower_keywords = ["flower", "color", "size", "petals"]
     
     //Book keyword array
-    var book_keywords = ["book", "classic", "literature", "hardcover"]
+    let book_keywords = ["book", "classic", "literature", "hardcover"]
     
     //Actor keyword array
-    var actor_keywords = ["actor", "movie", "hero", "film"]
+    let actor_keywords = ["actor", "movie", "hero", "film"]
     
     //Topic array
-    var topic_array = [["These are some of my favorite flowers that can be found locally. This search yields 5 results."],["These are some of my favorite books that range from classical literature to modern science fiction. This search yields 5 results."],["These are some of the most well-known actors and actresses of all time, spanning across different generations of movie and TV history. This search yields 5 results."]]
+    let topic_array = [["These are some of my favorite flowers that can be found locally. This search yields 5 results."],["These are some of my favorite books that range from classical literature to modern science fiction. This search yields 5 results."],["These are some of the most well-known actors and actresses of all time, spanning across different generations of movie and TV history. This search yields 5 results."]]
     
     @IBAction func onClickSearch(_ sender: Any) {
     }
@@ -84,6 +84,7 @@ class ViewController: UIViewController {
     
     func updateDetails(_ imageNum:Int){
         resultImage.image = UIImage()
+        topicInfoText.inputView = UITextView()
     }
     
     
