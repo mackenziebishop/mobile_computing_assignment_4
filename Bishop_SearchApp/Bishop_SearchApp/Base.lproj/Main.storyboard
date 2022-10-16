@@ -48,20 +48,10 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="131" translatesAutoresizingMaskIntoConstraints="NO" id="dlF-IL-U5W" userLabel="Buttons">
-                                <rect key="frame" x="60" y="490" width="295" height="31"/>
+                                <rect key="frame" x="60" y="490" width="81" height="31"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrU-BS-95d">
-                                        <rect key="frame" x="0.0" y="0.0" width="82" height="31"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Next Img">
-                                            <color key="baseBackgroundColor" red="0.12452372039769803" green="0.60901256443298968" blue="0.20285166002485391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="onClickNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iBH-O7-ZxE"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCj-fQ-7EH">
-                                        <rect key="frame" x="213" y="0.0" width="82" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="81" height="31"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Prev Img">
                                             <color key="baseBackgroundColor" red="0.1245237204" green="0.60901256439999996" blue="0.20285165999999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -80,6 +70,17 @@
                                     <constraint firstAttribute="height" constant="200" id="znz-v7-aWH"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SrU-BS-95d">
+                                <rect key="frame" x="273" y="490" width="82" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Next Img">
+                                    <color key="baseBackgroundColor" red="0.12452372039769803" green="0.60901256443298968" blue="0.20285166002485391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onClickNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iBH-O7-ZxE"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

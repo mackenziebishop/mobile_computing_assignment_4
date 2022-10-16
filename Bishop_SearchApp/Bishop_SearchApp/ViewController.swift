@@ -21,11 +21,18 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var topicInfoText: UITextView!
     
+    var imageNum = 0;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //Display image at 0th index
+        updateDetails(0)
+        
+        //Previous button disabled
+        showPrevImagesBtn.isEnabled = false
     }
-    var array = [
+    let image_array = [
         //Flower image array
         [UIImage(named: "daisy"), UIImage(named: "lilly"), UIImage(named: "marigold"), UIImage(named: "rose"), UIImage(named: "sunflower")],
         //Book image array
@@ -43,14 +50,40 @@ class ViewController: UIViewController {
     var actor_keywords = ["actor", "movie", "hero", "film"]
     
     //Topic array
+    var topic_array = [[],[],[]]
     
     @IBAction func onClickSearch(_ sender: Any) {
     }
     
     @IBAction func onClickNext(_ sender: UIButton) {
+        imageNum += 1;
+        updateDetails(imageNum)
+        
+        //Enable previous button
+        showPrevImagesBtn.isEnabled = true
+        
+        //Reaching end of array, next button is disabled
+        if(imageNum == image_array.count-1){
+            //Disable next button
+            showNextImagesBtn.isEnabled = false
+        }
     }
     
     @IBAction func onClickPrev(_ sender: UIButton) {
+        imageNum -= 1;
+        updateDetails(imageNum)
+        
+        //Enable next button
+        showNextImagesBtn.isEnabled = true
+        
+        //At the beginning of the array, previous button is disabled
+        if (imageNum == 0){
+            showPrevImagesBtn.isEnabled = false;
+        }
+    }
+    
+    func updateDetails(_ imageNum:Int){
+        resultImage.image = UIImage()
     }
     
     
