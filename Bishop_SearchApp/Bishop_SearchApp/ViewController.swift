@@ -50,7 +50,7 @@ class ViewController: UIViewController {
     var actor_keywords = ["actor", "movie", "hero", "film"]
     
     //Topic array
-    var topic_array = [[],[],[]]
+    var topic_array = [["These are some of my favorite flowers that can be found locally. This search yields 5 results."],["These are some of my favorite books that range from classical literature to modern science fiction. This search yields 5 results."],["These are some of the most well-known actors and actresses of all time, spanning across different generations of movie and TV history. This search yields 5 results."]]
     
     @IBAction func onClickSearch(_ sender: Any) {
     }
