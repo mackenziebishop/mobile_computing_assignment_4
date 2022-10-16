@@ -41,5 +41,18 @@ class ViewController: UIViewController {
     
     //Actor keyword array
     var actor_keywords = ["actor", "movie", "hero", "film"]
+    
+    //Topic array
+    
+    @IBAction func onClickSearch(_ sender: Any) {
+    }
+    
+    @IBAction func onClickNext(_ sender: UIButton) {
+    }
+    
+    @IBAction func onClickPrev(_ sender: UIButton) {
+    }
+    
+    
 }
 

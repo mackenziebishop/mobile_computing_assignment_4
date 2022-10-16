@@ -29,6 +29,9 @@
                                         <buttonConfiguration key="configuration" style="filled" image="magnifyingglass" catalog="system" title="Search">
                                             <color key="baseBackgroundColor" red="0.1245237204" green="0.60901256439999996" blue="0.20285165999999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickSearch:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vsg-he-TcI"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -53,6 +56,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Next Img">
                                             <color key="baseBackgroundColor" red="0.12452372039769803" green="0.60901256443298968" blue="0.20285166002485391" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickNext:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iBH-O7-ZxE"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCj-fQ-7EH">
                                         <rect key="frame" x="213" y="0.0" width="82" height="31"/>
@@ -60,6 +66,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Prev Img">
                                             <color key="baseBackgroundColor" red="0.1245237204" green="0.60901256439999996" blue="0.20285165999999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onClickPrev:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UoV-6G-Uq5"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
