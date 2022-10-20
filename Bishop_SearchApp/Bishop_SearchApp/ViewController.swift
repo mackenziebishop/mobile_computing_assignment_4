@@ -21,17 +21,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var topicInfoText: UITextView!
     
-    var imageNum = 0;
+    var imageName:String
+    var imageNum:Int = 0
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        //Display image at 0th index
-        updateDetails(0)
-        
-        //Previous button disabled
-        showPrevImagesBtn.isEnabled = false
-    }
     let image_array = [
         //Flower image array
         [UIImage(named: "daisy"), UIImage(named: "lilly"), UIImage(named: "marigold"), UIImage(named: "rose"), UIImage(named: "sunflower")],
@@ -40,6 +32,15 @@ class ViewController: UIViewController {
         //Actor image array
         [UIImage(named: "emma_watson"), UIImage(named: "meryl_streep"), UIImage(named: "morgan_freeman"), UIImage(named: "tom_hanks"), UIImage(named: "tom_holland")]
     ]
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        //Display image at 0th index
+        
+        //Previous button disabled
+        showPrevImagesBtn.isEnabled = false
+    }
     //Flower keyword array
     let flower_keywords = ["flower", "color", "size", "petals"]
     
@@ -53,25 +54,33 @@ class ViewController: UIViewController {
     let topic_array = [["These are some of my favorite flowers that can be found locally. This search yields 5 results."],["These are some of my favorite books that range from classical literature to modern science fiction. This search yields 5 results."],["These are some of the most well-known actors and actresses of all time, spanning across different generations of movie and TV history. This search yields 5 results."]]
     
     @IBAction func onClickSearch(_ sender: Any) {
-        if flower_keywords.contains(searchTextField.text!){
-            
+        var keyword = searchTextField.text!
+        var topic = 0
+        if flower_keywords.contains(keyword){
+            topic = 1
+            while topic == 1{
+                //display images
+                resultImage.image = UIImage()
+                //display text
+            }
         }
-        else{}
+        switch{
+        }
         
         if book_keywords.contains(searchTextField.text!){
             
         }
-        else{}
+        switch{}
         
         if actor_keywords.contains(searchTextField.text!){
             
         }
-        else{}
+        switch{}
     }
     
     @IBAction func onClickNext(_ sender: UIButton) {
         imageNum += 1;
-        updateDetails(imageNum)
+        updateDetails(imageName)
         
         //Enable previous button
         showPrevImagesBtn.isEnabled = true
@@ -85,7 +94,7 @@ class ViewController: UIViewController {
     
     @IBAction func onClickPrev(_ sender: UIButton) {
         imageNum -= 1;
-        updateDetails(imageNum)
+        updateDetails(imageName)
         
         //Enable next button
         showNextImagesBtn.isEnabled = true
@@ -96,9 +105,10 @@ class ViewController: UIViewController {
         }
     }
     
-    func updateDetails(_ imageNum:Int){
-        resultImage.image = UIImage()
+    func updateDetails(_ imageName:String){
+        resultImage.image = UIImage(named:image_array[0])
         topicInfoText.inputView = UITextView()
     }
 }
 
+s
